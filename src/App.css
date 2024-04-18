@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+    font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+    background-color: rgb(3, 0, 31);
+    color: white;
+    font-family: 'Poppins',sans-serif;
+}
+.App{
+    min-height: 100vh;
+    display: flex;
+    
+}
+.logo{
+    margin-right: 1rem;
+    width: 50px;
+    height: 50px;
+}
+
+
+.sideBar {
+    flex: 3;
+    border-right: 1px solid white ;
   }
+  
+
+.main{
+    flex: 9;
+}
+.brand{
+    font-size: 2rem;
+}
+.upperside {
+    padding: 2.5rem;
+    border-bottom: 1px solid white;
+    height: 70%;
+}
+.uppersidetop{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+.addbtn{
+    height: 2rem;
+    padding-right: 1rem;
+
+}
+.midbtn{
+    background: #5A4BFF;
+    border: none;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+}
+.query{
+    display: flex;
+    align-items: center;
+    background:transparent;
+    padding: 1.5rem;
+    width: 25rem;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    color: white;
+    
+}
+.query>img{
+    margin-right: 2rem ;
+    object-position: cover;
+    height: 1.75rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.lowerside{
+    padding: 2rem;
+
+}
+.listitems{
+    margin: 0.75rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    
+}
+.listitemimg{
+    margin: 1rem;
+    padding-right: 1rem;
+}
+.listitems:nth-child(1)>.listitemimg{
+    margin-right: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listitems:nth-child(3)>.listitemimg{
+    margin-right: 0.8rem;
 }
